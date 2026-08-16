@@ -10,9 +10,9 @@ This project demonstrates the Smart Retrofitting of a legacy industrial air comp
 - Sustainable ROI: Correlates energy consumption spikes with detected leaks to calculate real-time financial waste.
 # 🏗 The Tech Stack
 - Hardware:
-* Legacy Air Compressor (Test Bench)
-* Raspberry Pi (Edge Gateway) / ESP32 (Sensor Node)
-* Analog/I2S MEMS Microphone
+  * Legacy Air Compressor (Test Bench)
+  * Raspberry Pi (Edge Gateway) / ESP32 (Sensor Node)
+  * Analog/I2S MEMS Microphone
 - AI/ML:
 Edge Impulse: DSP (Digital Signal Processing) and Mel-frequency cepstral coefficients (MFCC) feature extraction.
 TensorFlow Lite for Microcontrollers: Local inference.
