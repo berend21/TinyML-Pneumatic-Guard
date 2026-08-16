@@ -14,17 +14,17 @@ This project demonstrates the Smart Retrofitting of a legacy industrial air comp
   * Raspberry Pi (Edge Gateway) / ESP32 (Sensor Node)
   * Analog/I2S MEMS Microphone
 - AI/ML:
-Edge Impulse: DSP (Digital Signal Processing) and Mel-frequency cepstral coefficients (MFCC) feature extraction.
-TensorFlow Lite for Microcontrollers: Local inference.
-Communication:
-MQTT (HiveMQ): Pub/Sub messaging protocol.
-Visualization:
-Ignition (Inductive Automation): Industrial dashboard for OEE and anomaly alerts.
+  * Edge Impulse: DSP (Digital Signal Processing) and Mel-frequency cepstral coefficients (MFCC) feature extraction.
+  * TensorFlow Lite for Microcontrollers: Local inference.
+- Communication:
+ * MQTT (HiveMQ): Pub/Sub messaging protocol.
+- Visualization:
+ * Ignition (Inductive Automation): Industrial dashboard for OEE and anomaly alerts.
 # 🚀 Workflow
-Data Acquisition: Captured acoustic samples of the compressor in three states: Idle, Normal Pumping, and Leaking (Pressure Drop).
-Training: Developed a Convolutional Neural Network (CNN) in Edge Impulse to recognize the specific "hiss" frequency of the leaking valve.
-Deployment: Exported the model as a C++ library and ran it on the Raspberry Pi using the Edge Impulse Linux Runner.
-Integration:
-The Python "Bridge" script monitors the AI output.
-Publishes status to factory/workshop/compressor/health.
-Ignition subscribes to the topic and triggers a "Maintenance Required" alert if a leak is detected while the motor is off.
+1. Data Acquisition: Captured acoustic samples of the compressor in three states: Idle, Normal Pumping, and Leaking (Pressure Drop).
+2. Training: Developed a Convolutional Neural Network (CNN) in Edge Impulse to recognize the specific "hiss" frequency of the leaking valve.
+3. Deployment: Exported the model as a C++ library and ran it on the Raspberry Pi using the Edge Impulse Linux Runner.
+4. Integration:
+ * The Python "Bridge" script monitors the AI output.
+ * Publishes status to factory/workshop/compressor/health.
+ * Ignition subscribes to the topic and triggers a "Maintenance Required" alert if a leak is detected while the motor is off.
