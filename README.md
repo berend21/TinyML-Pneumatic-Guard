@@ -17,9 +17,9 @@ This project demonstrates the Smart Retrofitting of a legacy industrial air comp
   * Edge Impulse: DSP (Digital Signal Processing) and Mel-frequency cepstral coefficients (MFCC) feature extraction.
   * TensorFlow Lite for Microcontrollers: Local inference.
 - Communication:
- * MQTT (HiveMQ): Pub/Sub messaging protocol.
+  * MQTT (HiveMQ): Pub/Sub messaging protocol.
 - Visualization:
- * Ignition (Inductive Automation): Industrial dashboard for OEE and anomaly alerts.
+  * Ignition (Inductive Automation): Industrial dashboard for OEE and anomaly alerts.
 # 🚀 Workflow
 1. Data Acquisition: Captured acoustic samples of the compressor in three states: Idle, Normal Pumping, and Leaking (Pressure Drop).
 2. Training: Developed a Convolutional Neural Network (CNN) in Edge Impulse to recognize the specific "hiss" frequency of the leaking valve.
