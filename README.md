@@ -1,6 +1,6 @@
 # Project: TinyML-Pneumatic-Guard
 On-Device Acoustic AI for Real-Time Leak Detection & Energy Optimization
-🛠 Project Overview
+# 🛠 Project Overview
 This project demonstrates the Smart Retrofitting of a legacy industrial air compressor. By using Local AI (TinyML), the system identifies energy-wasting air leaks and operational anomalies directly at the source, without requiring cloud connectivity.
 
 # 🌟 Key Features
