@@ -25,6 +25,6 @@ This project demonstrates the Smart Retrofitting of a legacy industrial air comp
 2. Training: Developed a Convolutional Neural Network (CNN) in Edge Impulse to recognize the specific "hiss" frequency of the leaking valve.
 3. Deployment: Exported the model as a C++ library and ran it on the Raspberry Pi using the Edge Impulse Linux Runner.
 4. Integration:
- * The Python "Bridge" script monitors the AI output.
- * Publishes status to factory/workshop/compressor/health.
- * Ignition subscribes to the topic and triggers a "Maintenance Required" alert if a leak is detected while the motor is off.
+  * The Python "Bridge" script monitors the AI output.
+  * Publishes status to factory/workshop/compressor/health.
+  * Ignition subscribes to the topic and triggers a "Maintenance Required" alert if a leak is detected while the motor is off.
